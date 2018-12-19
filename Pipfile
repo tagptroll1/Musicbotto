@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+discord-py = {git = "https://github.com/Rapptz/discord.py.git@rewrite", extras = ["voice"]}
+yarl = "*"
+pyyaml = "*"
+aiodns = "*"
+youtube-dl = "*"
+
+[dev-packages]
+"flake8" = ">=3.6"
+"flake8-bugbear" = "*"
+"flake8-import-order" = "*"
+"flake8-tidy-imports" = "*"
+"flake8-todo" = "*"
+"flake8-string-format" = "*"
+pylint = "*"
+"autopep8" = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+lint = "python -m flake8"
+start = "python -m bot"
